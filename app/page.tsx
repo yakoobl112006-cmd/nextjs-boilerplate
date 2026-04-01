@@ -18,6 +18,24 @@ export default function Page() {
     },
   ];
 
+  const fleet = [
+    {
+      name: "2023 Mercedes S580",
+      type: "Luxury Sedan",
+      desc: "A high-end luxury ride for clients who want comfort, presence, and a premium experience.",
+    },
+    {
+      name: "2024 Mercedes E350",
+      type: "Executive Sedan",
+      desc: "A modern and professional option that is great for business travel, airport runs, and private trips.",
+    },
+    {
+      name: "2020 Mercedes E350",
+      type: "Executive Sedan",
+      desc: "A clean and dependable vehicle for comfortable local trips, hourly rides, and scheduled bookings.",
+    },
+  ];
+
   const testimonials = [
     {
       name: "Daniel R.",
@@ -44,6 +62,9 @@ export default function Page() {
           <nav className="hidden gap-6 text-sm md:flex">
             <a href="#services" className="text-neutral-300 transition hover:text-white">
               Services
+            </a>
+            <a href="#fleet" className="text-neutral-300 transition hover:text-white">
+              Fleet
             </a>
             <a href="#about" className="text-neutral-300 transition hover:text-white">
               About
@@ -87,10 +108,10 @@ export default function Page() {
                 Reserve Your Ride
               </a>
               <a
-                href="#services"
+                href="#fleet"
                 className="rounded-2xl border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/5"
               >
-                View Services
+                View Our Fleet
               </a>
             </div>
             <div className="mt-10 grid max-w-lg grid-cols-3 gap-4">
@@ -103,8 +124,8 @@ export default function Page() {
                 <p className="mt-1 text-sm text-neutral-400">Professional</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="text-2xl font-semibold">5-Star</p>
-                <p className="mt-1 text-sm text-neutral-400">Service</p>
+                <p className="text-2xl font-semibold">Premium</p>
+                <p className="mt-1 text-sm text-neutral-400">Fleet</p>
               </div>
             </div>
           </div>
@@ -181,8 +202,42 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="about" className="border-y border-white/10 bg-white/5">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
+      <section id="fleet" className="border-y border-white/10 bg-white/5">
+        <div className="mx-auto max-w-7xl px-6 py-20">
+          <div className="mb-12 max-w-2xl">
+            <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Our Fleet</p>
+            <h3 className="mt-3 text-3xl font-semibold md:text-4xl">
+              Vehicles available for client requests.
+            </h3>
+            <p className="mt-4 text-neutral-300">
+              Here is the current fleet available through VA Limo Service. Vehicle photos can be
+              added later so clients can preview each option before booking.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {fleet.map((car) => (
+              <div
+                key={car.name}
+                className="rounded-[1.5rem] border border-white/10 bg-neutral-950 p-6 shadow-lg"
+              >
+                <div className="mb-5 flex aspect-[4/3] items-center justify-center rounded-[1.25rem] border border-dashed border-white/10 bg-gradient-to-br from-neutral-900 to-neutral-800 text-6xl">
+                  🚗
+                </div>
+                <p className="text-sm uppercase tracking-[0.25em] text-neutral-400">{car.type}</p>
+                <h4 className="mt-2 text-2xl font-semibold">{car.name}</h4>
+                <p className="mt-4 leading-7 text-neutral-300">{car.desc}</p>
+                <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-neutral-300">
+                  Photos coming soon
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="mx-auto max-w-7xl px-6 py-20">
+        <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Why Choose Us</p>
             <h3 className="mt-3 text-3xl font-semibold md:text-4xl">
@@ -233,7 +288,7 @@ export default function Page() {
             </p>
             <div className="mt-8 space-y-3 text-neutral-300">
               <p>
-                <span className="font-medium text-white">Phone:</span> Your phone number here
+                <span className="font-medium text-white">Phone:</span> 571 635 2862
               </p>
               <p>
                 <span className="font-medium text-white">Email:</span> valimoservice703@gmail.com
@@ -261,6 +316,15 @@ export default function Page() {
               />
             </div>
             <div>
+              <label className="mb-2 block text-sm text-neutral-300">Requested Vehicle</label>
+              <select className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none">
+                <option>Choose a vehicle</option>
+                <option>2023 Mercedes S580</option>
+                <option>2024 Mercedes E350</option>
+                <option>2020 Mercedes E350</option>
+              </select>
+            </div>
+            <div>
               <label className="mb-2 block text-sm text-neutral-300">Pickup Location</label>
               <input
                 className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500"
@@ -273,6 +337,16 @@ export default function Page() {
                 className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500"
                 placeholder="Enter destination"
               />
+            </div>
+            <div>
+              <label className="mb-2 block text-sm text-neutral-300">Service Type</label>
+              <select className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none">
+                <option>Choose a service</option>
+                <option>One-Way Trip</option>
+                <option>Round Trip</option>
+                <option>Hourly Service</option>
+                <option>Delegation Booking</option>
+              </select>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               <div>
