@@ -54,11 +54,16 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div>
-            <h1 className="text-xl font-semibold tracking-[0.2em] uppercase">VA Limo Service</h1>
-            <p className="text-xs text-neutral-400">Limo, Hourly, and Delegation Transportation</p>
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+          <div className="min-w-0">
+            <h1 className="text-lg font-semibold uppercase tracking-[0.2em] sm:text-xl">
+              VA Limo Service
+            </h1>
+            <p className="text-xs text-neutral-400 sm:text-sm">
+              Limo, Hourly, and Delegation Transportation
+            </p>
           </div>
+
           <nav className="hidden gap-6 text-sm md:flex">
             <a href="#services" className="text-neutral-300 transition hover:text-white">
               Services
@@ -76,9 +81,10 @@ export default function Page() {
               Contact
             </a>
           </nav>
+
           <a
             href="#contact"
-            className="rounded-2xl border border-white/20 bg-white px-4 py-2 text-sm font-medium text-black transition hover:opacity-90"
+            className="shrink-0 rounded-2xl border border-white/20 bg-white px-4 py-2 text-sm font-medium text-black transition hover:opacity-90 sm:px-5 sm:py-3"
           >
             Book Now
           </a>
@@ -87,12 +93,12 @@ export default function Page() {
 
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.10),transparent_35%)]" />
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center md:py-24">
           <div>
             <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-400">
               Virginia, Maryland & DC Transportation
             </p>
-            <h2 className="max-w-xl text-4xl font-semibold leading-tight md:text-6xl">
+            <h2 className="max-w-xl text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
               Professional limo service for Virginia, Maryland, and DC.
             </h2>
             <p className="mt-6 max-w-xl text-base leading-7 text-neutral-300 md:text-lg">
@@ -100,6 +106,7 @@ export default function Page() {
               and DC, along with hourly rides and delegation bookings with dependable and
               professional service.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#contact"
@@ -114,7 +121,8 @@ export default function Page() {
                 View Our Fleet
               </a>
             </div>
-            <div className="mt-10 grid max-w-lg grid-cols-3 gap-4">
+
+            <div className="mt-10 grid max-w-lg grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                 <p className="text-2xl font-semibold">24/7</p>
                 <p className="mt-1 text-sm text-neutral-400">Availability</p>
@@ -131,30 +139,32 @@ export default function Page() {
           </div>
 
           <div className="relative">
-            <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-neutral-900 to-neutral-800 p-6 shadow-2xl">
-              <div className="rounded-[1.5rem] border border-white/10 bg-neutral-950 p-8">
-                <div className="mb-8 flex items-center justify-between">
+            <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-neutral-900 to-neutral-800 p-4 shadow-2xl md:p-6">
+              <div className="rounded-[1.5rem] border border-white/10 bg-neutral-950 p-5 md:p-8">
+                <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <p className="text-sm text-neutral-400">Featured Service</p>
-                    <h3 className="text-2xl font-semibold">Premium Transportation</h3>
+                    <h3 className="text-2xl font-semibold md:text-3xl">Premium Transportation</h3>
                   </div>
-                  <div className="rounded-full border border-white/10 px-4 py-2 text-sm text-neutral-300">
+                  <div className="w-fit rounded-full border border-white/10 px-4 py-2 text-sm text-neutral-300">
                     Premium
                   </div>
                 </div>
-                <div className="aspect-[4/3] rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-neutral-800 to-neutral-900 p-6">
-                  <div className="flex h-full items-end justify-between rounded-[1.25rem] border border-dashed border-white/10 p-6">
-                    <div>
+
+                <div className="rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-neutral-800 to-neutral-900 p-4 md:p-6">
+                  <div className="flex flex-col gap-6 rounded-[1.25rem] border border-dashed border-white/10 p-4 sm:flex-row sm:items-end sm:justify-between md:p-6">
+                    <div className="min-w-0">
                       <p className="text-sm text-neutral-400">VA Limo Service</p>
-                      <p className="mt-2 max-w-xs text-lg text-neutral-200">
+                      <p className="mt-2 text-base leading-7 text-neutral-200 md:text-lg">
                         Professional transportation for local trips, hourly bookings, and
                         delegation travel across Virginia, Maryland, and DC.
                       </p>
                     </div>
-                    <div className="text-5xl">🚘</div>
+                    <div className="self-center text-5xl sm:self-end">🚘</div>
                   </div>
                 </div>
-                <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-neutral-300">
+
+                <div className="mt-6 grid grid-cols-1 gap-4 text-sm text-neutral-300 sm:grid-cols-2">
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     Virginia trips
                   </div>
@@ -174,7 +184,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="services" className="mx-auto max-w-7xl px-6 py-20">
+      <section id="services" className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="mb-12 max-w-2xl">
           <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Our Services</p>
           <h3 className="mt-3 text-3xl font-semibold md:text-4xl">
@@ -186,6 +196,7 @@ export default function Page() {
             detail.
           </p>
         </div>
+
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {services.map((service) => (
             <div
@@ -203,7 +214,7 @@ export default function Page() {
       </section>
 
       <section id="fleet" className="border-y border-white/10 bg-white/5">
-        <div className="mx-auto max-w-7xl px-6 py-20">
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
           <div className="mb-12 max-w-2xl">
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Our Fleet</p>
             <h3 className="mt-3 text-3xl font-semibold md:text-4xl">
@@ -236,7 +247,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="about" className="mx-auto max-w-7xl px-6 py-20">
+      <section id="about" className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Why Choose Us</p>
@@ -258,7 +269,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="reviews" className="mx-auto max-w-7xl px-6 py-20">
+      <section id="reviews" className="mx-auto max-w-7xl px-4 py-20 sm:px-6">
         <div className="mb-12 max-w-2xl">
           <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Client Reviews</p>
           <h3 className="mt-3 text-3xl font-semibold md:text-4xl">
@@ -267,7 +278,10 @@ export default function Page() {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((item) => (
-            <div key={item.name} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+            <div
+              key={item.name}
+              className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6"
+            >
               <p className="text-lg leading-8 text-neutral-200">“{item.text}”</p>
               <p className="mt-6 text-sm uppercase tracking-[0.25em] text-neutral-400">
                 {item.name}
@@ -277,8 +291,8 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="grid gap-8 rounded-[2rem] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-8 md:grid-cols-2 md:p-10">
+      <section id="contact" className="mx-auto max-w-7xl px-4 pb-20 sm:px-6">
+        <div className="grid gap-8 rounded-[2rem] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:grid-cols-2 md:p-10">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Book a Ride</p>
             <h3 className="mt-3 text-3xl font-semibold md:text-4xl">Request your ride today.</h3>
@@ -308,6 +322,7 @@ export default function Page() {
                 placeholder="Your full name"
               />
             </div>
+
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Phone Number</label>
               <input
@@ -315,6 +330,7 @@ export default function Page() {
                 placeholder="Your phone number"
               />
             </div>
+
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Requested Vehicle</label>
               <select className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none">
@@ -324,6 +340,7 @@ export default function Page() {
                 <option>2020 Mercedes E350</option>
               </select>
             </div>
+
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Pickup Location</label>
               <input
@@ -331,6 +348,7 @@ export default function Page() {
                 placeholder="Enter pickup location"
               />
             </div>
+
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Drop-off Location</label>
               <input
@@ -338,6 +356,7 @@ export default function Page() {
                 placeholder="Enter destination"
               />
             </div>
+
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Service Type</label>
               <select className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none">
@@ -348,6 +367,7 @@ export default function Page() {
                 <option>Delegation Booking</option>
               </select>
             </div>
+
             <div className="grid gap-4 md:grid-cols-2">
               <div>
                 <label className="mb-2 block text-sm text-neutral-300">Date</label>
@@ -364,6 +384,7 @@ export default function Page() {
                 />
               </div>
             </div>
+
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Message</label>
               <textarea
@@ -372,6 +393,7 @@ export default function Page() {
                 placeholder="Tell us about your ride request"
               />
             </div>
+
             <button
               type="button"
               className="w-full rounded-xl bg-white px-4 py-3 font-medium text-black transition hover:opacity-90"
@@ -382,7 +404,7 @@ export default function Page() {
         </div>
       </section>
 
-      <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-neutral-500">
+      <footer className="border-t border-white/10 px-4 py-8 text-center text-sm text-neutral-500 sm:px-6">
         © 2026 VA Limo Service. All rights reserved.
       </footer>
     </div>
