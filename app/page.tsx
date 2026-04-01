@@ -1,20 +1,20 @@
 export default function Page() {
   const services = [
     {
-      title: "Airport Transfers",
-      desc: "On-time pickup and drop-off service for business and personal travel with a smooth, stress-free experience.",
-    },
-    {
-      title: "Corporate Travel",
-      desc: "Professional chauffeur service for meetings, client pickups, executive travel, and business events.",
-    },
-    {
-      title: "Special Events",
-      desc: "Private transportation for weddings, dinners, parties, and important occasions where timing matters.",
+      title: "Trips To and From Any Area",
+      desc: "Reliable transportation for pickups and drop-offs across Virginia, Maryland, and DC with professional service from start to finish.",
     },
     {
       title: "Hourly Service",
-      desc: "Flexible private driver service when you need a chauffeur on standby for multiple stops or longer trips.",
+      desc: "Book a driver by the hour for flexible transportation, multiple stops, business needs, or personal travel.",
+    },
+    {
+      title: "Delegation Bookings",
+      desc: "Professional transportation support for delegation travel, group coordination, scheduled pickups, and important events.",
+    },
+    {
+      title: "Business and Private Travel",
+      desc: "Clean, dependable limo service for airport runs, meetings, special occasions, and private transportation needs.",
     },
   ];
 
@@ -38,14 +38,22 @@ export default function Page() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div>
-            <h1 className="text-xl font-semibold tracking-[0.2em] uppercase">Blackline Chauffeur</h1>
-            <p className="text-xs text-neutral-400">Private Driver & Executive Transport</p>
+            <h1 className="text-xl font-semibold tracking-[0.2em] uppercase">VA Limo Service</h1>
+            <p className="text-xs text-neutral-400">Limo, Hourly, and Delegation Transportation</p>
           </div>
           <nav className="hidden gap-6 text-sm md:flex">
-            <a href="#services" className="text-neutral-300 transition hover:text-white">Services</a>
-            <a href="#about" className="text-neutral-300 transition hover:text-white">About</a>
-            <a href="#reviews" className="text-neutral-300 transition hover:text-white">Reviews</a>
-            <a href="#contact" className="text-neutral-300 transition hover:text-white">Contact</a>
+            <a href="#services" className="text-neutral-300 transition hover:text-white">
+              Services
+            </a>
+            <a href="#about" className="text-neutral-300 transition hover:text-white">
+              About
+            </a>
+            <a href="#reviews" className="text-neutral-300 transition hover:text-white">
+              Reviews
+            </a>
+            <a href="#contact" className="text-neutral-300 transition hover:text-white">
+              Contact
+            </a>
           </nav>
           <a
             href="#contact"
@@ -60,12 +68,16 @@ export default function Page() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.10),transparent_35%)]" />
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center md:py-28">
           <div>
-            <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-400">Luxury Chauffeur Service</p>
+            <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-400">
+              Virginia, Maryland & DC Transportation
+            </p>
             <h2 className="max-w-xl text-4xl font-semibold leading-tight md:text-6xl">
-              Professional private transportation with comfort, class, and reliability.
+              Professional limo service for Virginia, Maryland, and DC.
             </h2>
             <p className="mt-6 max-w-xl text-base leading-7 text-neutral-300 md:text-lg">
-              Serving airport transfers, executive travel, special events, and hourly bookings with a premium experience from pickup to drop-off.
+              VA Limo Service provides trips to and from destinations across Virginia, Maryland,
+              and DC, along with hourly rides and delegation bookings with dependable and
+              professional service.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
@@ -102,27 +114,38 @@ export default function Page() {
               <div className="rounded-[1.5rem] border border-white/10 bg-neutral-950 p-8">
                 <div className="mb-8 flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-neutral-400">Featured Ride</p>
-                    <h3 className="text-2xl font-semibold">Executive Class</h3>
+                    <p className="text-sm text-neutral-400">Featured Service</p>
+                    <h3 className="text-2xl font-semibold">Premium Transportation</h3>
                   </div>
-                  <div className="rounded-full border border-white/10 px-4 py-2 text-sm text-neutral-300">Premium</div>
+                  <div className="rounded-full border border-white/10 px-4 py-2 text-sm text-neutral-300">
+                    Premium
+                  </div>
                 </div>
                 <div className="aspect-[4/3] rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-neutral-800 to-neutral-900 p-6">
                   <div className="flex h-full items-end justify-between rounded-[1.25rem] border border-dashed border-white/10 p-6">
                     <div>
-                      <p className="text-sm text-neutral-400">Luxury Sedan Service</p>
+                      <p className="text-sm text-neutral-400">VA Limo Service</p>
                       <p className="mt-2 max-w-xs text-lg text-neutral-200">
-                        Clean vehicle, smooth ride, and professional presentation for every trip.
+                        Professional transportation for local trips, hourly bookings, and
+                        delegation travel across Virginia, Maryland, and DC.
                       </p>
                     </div>
                     <div className="text-5xl">🚘</div>
                   </div>
                 </div>
                 <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-neutral-300">
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Airport pickup</div>
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Business travel</div>
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Events & weddings</div>
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">Hourly bookings</div>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    Virginia trips
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    Maryland trips
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    DC trips
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    Delegation bookings
+                  </div>
                 </div>
               </div>
             </div>
@@ -133,14 +156,21 @@ export default function Page() {
       <section id="services" className="mx-auto max-w-7xl px-6 py-20">
         <div className="mb-12 max-w-2xl">
           <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Our Services</p>
-          <h3 className="mt-3 text-3xl font-semibold md:text-4xl">Chauffeur service tailored to your schedule.</h3>
+          <h3 className="mt-3 text-3xl font-semibold md:text-4xl">
+            Transportation tailored to your schedule.
+          </h3>
           <p className="mt-4 text-neutral-300">
-            Whether you need a single ride or a private driver for the day, every booking is handled with punctuality, discretion, and attention to detail.
+            Whether you need a single ride, hourly service, or transportation for important
+            bookings, every trip is handled with punctuality, professionalism, and attention to
+            detail.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {services.map((service) => (
-            <div key={service.title} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 shadow-lg">
+            <div
+              key={service.title}
+              className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 shadow-lg"
+            >
               <div className="mb-4 inline-flex rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-neutral-300">
                 Premium Service
               </div>
@@ -155,14 +185,19 @@ export default function Page() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Why Choose Us</p>
-            <h3 className="mt-3 text-3xl font-semibold md:text-4xl">A luxury experience built on trust and professionalism.</h3>
+            <h3 className="mt-3 text-3xl font-semibold md:text-4xl">
+              A premium experience built on professionalism and reliability.
+            </h3>
           </div>
-          <div className="space-y-5 text-neutral-300 leading-7">
+          <div className="space-y-5 leading-7 text-neutral-300">
             <p>
-              We focus on clean presentation, dependable timing, and excellent customer care. From airport pickups to executive travel, every ride is handled with the level of service clients expect from a premium chauffeur company.
+              VA Limo Service focuses on dependable timing, professional communication, and quality
+              transportation throughout Virginia, Maryland, and DC. Every ride is handled with
+              care so clients can count on a smooth and stress-free experience.
             </p>
             <p>
-              Our goal is simple: make every trip comfortable, smooth, and stress-free while giving clients the confidence that their transportation is handled the right way.
+              Our goal is to provide transportation that feels reliable, professional, and easy to
+              book whether the ride is a one-time trip, an hourly job, or a delegation booking.
             </p>
           </div>
         </div>
@@ -171,13 +206,17 @@ export default function Page() {
       <section id="reviews" className="mx-auto max-w-7xl px-6 py-20">
         <div className="mb-12 max-w-2xl">
           <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Client Reviews</p>
-          <h3 className="mt-3 text-3xl font-semibold md:text-4xl">What clients say about the service.</h3>
+          <h3 className="mt-3 text-3xl font-semibold md:text-4xl">
+            What clients say about the service.
+          </h3>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((item) => (
             <div key={item.name} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
               <p className="text-lg leading-8 text-neutral-200">“{item.text}”</p>
-              <p className="mt-6 text-sm uppercase tracking-[0.25em] text-neutral-400">{item.name}</p>
+              <p className="mt-6 text-sm uppercase tracking-[0.25em] text-neutral-400">
+                {item.name}
+              </p>
             </div>
           ))}
         </div>
@@ -187,49 +226,82 @@ export default function Page() {
         <div className="grid gap-8 rounded-[2rem] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-8 md:grid-cols-2 md:p-10">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">Book a Ride</p>
-            <h3 className="mt-3 text-3xl font-semibold md:text-4xl">Request your chauffeur service today.</h3>
+            <h3 className="mt-3 text-3xl font-semibold md:text-4xl">Request your ride today.</h3>
             <p className="mt-4 max-w-lg leading-7 text-neutral-300">
-              Tell us where and when you need service, and we’ll get back to you with availability and pricing.
+              Tell us where you need to go, when you need service, and whether you need a one-way
+              trip, hourly service, or a delegation booking.
             </p>
             <div className="mt-8 space-y-3 text-neutral-300">
-              <p><span className="text-white font-medium">Phone:</span> (555) 123-4567</p>
-              <p><span className="text-white font-medium">Email:</span> bookings@blacklinechauffeur.com</p>
-              <p><span className="text-white font-medium">Service Area:</span> Your City and surrounding areas</p>
+              <p>
+                <span className="font-medium text-white">Phone:</span> Your phone number here
+              </p>
+              <p>
+                <span className="font-medium text-white">Email:</span> valimoservice703@gmail.com
+              </p>
+              <p>
+                <span className="font-medium text-white">Service Area:</span> Virginia, Maryland,
+                and DC
+              </p>
             </div>
           </div>
 
           <form className="space-y-4 rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Full Name</label>
-              <input className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500" placeholder="Your full name" />
+              <input
+                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500"
+                placeholder="Your full name"
+              />
             </div>
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Phone Number</label>
-              <input className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500" placeholder="Your phone number" />
+              <input
+                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500"
+                placeholder="Your phone number"
+              />
             </div>
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Pickup Location</label>
-              <input className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500" placeholder="Enter pickup location" />
+              <input
+                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500"
+                placeholder="Enter pickup location"
+              />
             </div>
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Drop-off Location</label>
-              <input className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500" placeholder="Enter destination" />
+              <input
+                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500"
+                placeholder="Enter destination"
+              />
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               <div>
                 <label className="mb-2 block text-sm text-neutral-300">Date</label>
-                <input type="date" className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none" />
+                <input
+                  type="date"
+                  className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none"
+                />
               </div>
               <div>
                 <label className="mb-2 block text-sm text-neutral-300">Time</label>
-                <input type="time" className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none" />
+                <input
+                  type="time"
+                  className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none"
+                />
               </div>
             </div>
             <div>
               <label className="mb-2 block text-sm text-neutral-300">Message</label>
-              <textarea rows={4} className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500" placeholder="Tell us about your ride request" />
+              <textarea
+                rows={4}
+                className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none placeholder:text-neutral-500"
+                placeholder="Tell us about your ride request"
+              />
             </div>
-            <button type="button" className="w-full rounded-xl bg-white px-4 py-3 font-medium text-black transition hover:opacity-90">
+            <button
+              type="button"
+              className="w-full rounded-xl bg-white px-4 py-3 font-medium text-black transition hover:opacity-90"
+            >
               Submit Request
             </button>
           </form>
@@ -237,7 +309,7 @@ export default function Page() {
       </section>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-neutral-500">
-        © 2026 Blackline Chauffeur. All rights reserved.
+        © 2026 VA Limo Service. All rights reserved.
       </footer>
     </div>
   );
