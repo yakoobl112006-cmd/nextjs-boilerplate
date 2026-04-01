@@ -1,3 +1,5 @@
+"use client";
+
 export default function Page() {
   const services = [
     {
@@ -51,6 +53,13 @@ export default function Page() {
     },
   ];
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/90 backdrop-blur">
@@ -65,29 +74,44 @@ export default function Page() {
           </div>
 
           <nav className="hidden gap-6 text-sm md:flex">
-            <a href="#services" className="text-neutral-300 transition hover:text-white">
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-neutral-300 transition hover:text-white"
+            >
               Services
-            </a>
-            <a href="#fleet" className="text-neutral-300 transition hover:text-white">
+            </button>
+            <button
+              onClick={() => scrollToSection("fleet")}
+              className="text-neutral-300 transition hover:text-white"
+            >
               Fleet
-            </a>
-            <a href="#about" className="text-neutral-300 transition hover:text-white">
+            </button>
+            <button
+              onClick={() => scrollToSection("about")}
+              className="text-neutral-300 transition hover:text-white"
+            >
               About
-            </a>
-            <a href="#reviews" className="text-neutral-300 transition hover:text-white">
+            </button>
+            <button
+              onClick={() => scrollToSection("reviews")}
+              className="text-neutral-300 transition hover:text-white"
+            >
               Reviews
-            </a>
-            <a href="#contact" className="text-neutral-300 transition hover:text-white">
+            </button>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="text-neutral-300 transition hover:text-white"
+            >
               Contact
-            </a>
+            </button>
           </nav>
 
-          <a
-            href="#contact"
+          <button
+            onClick={() => scrollToSection("contact")}
             className="shrink-0 rounded-2xl border border-white/20 bg-white px-4 py-2 text-sm font-medium text-black transition hover:opacity-90 sm:px-5 sm:py-3"
           >
             Book Now
-          </a>
+          </button>
         </div>
       </header>
 
@@ -108,18 +132,18 @@ export default function Page() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#contact"
+              <button
+                onClick={() => scrollToSection("contact")}
                 className="rounded-2xl bg-white px-6 py-3 font-medium text-black transition hover:opacity-90"
               >
                 Reserve Your Ride
-              </a>
-              <a
-                href="#fleet"
+              </button>
+              <button
+                onClick={() => scrollToSection("fleet")}
                 className="rounded-2xl border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/5"
               >
                 View Our Fleet
-              </a>
+              </button>
             </div>
 
             <div className="mt-10 grid max-w-lg grid-cols-1 gap-4 sm:grid-cols-3">
